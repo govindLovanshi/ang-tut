@@ -1,0 +1,11 @@
+div{
+    display: inline-block;
+    border-right: 2px solid grey;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.input{
+    display: inline-block;
+}

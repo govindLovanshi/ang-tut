@@ -1,0 +1,36 @@
+<h2>Normal Iterating by using Ng- for</h2>
+
+<div>
+    <ul>
+        <!-- this is called host element - wherewvwer you called ngFor -->
+        <li *ngFor="let name of names" > 
+            {{name}}
+        </li>
+    </ul>
+</div>
+
+<h2>array Iterating by using Ng- for with edit options</h2>
+
+<section>
+    <div *ngFor="let user of newNames ; let i = index;">
+        <p>Sr. no {{i + 1}}</p>
+        <p>Name : {{user.name}}</p>
+        <p>Age : {{user.age}}</p>
+        <p>Gender : {{user.gender}}</p>
+        <button (click)="showAndEdit(i)" >Show Details /Edit</button>
+        <hr>
+
+    </div>
+</section>
+
+<!-- disabled  -->
+
+<section *ngIf="currentUser" >
+    Name :<input type="text" [disabled]="isDisablebe" name="name" [value]="currentUser.name"  (keyup)="setValue($event)"/>
+    Age :<input type="text" [disabled]="isDisablebe" name="age" [value]="currentUser.age" (keyup)="setValue($event)"/>
+    Gender :<input type="text" [disabled]="isDisablebe" name="gender" [value]="currentUser.gender" (keyup)="setValue($event)"/>
+    <br>
+    <button (click)="enableEditing()" >enable editing</button>
+</section>
+
+

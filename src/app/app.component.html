@@ -1,0 +1,21 @@
+<h2>this is a basic practice : 1 with enter</h2>
+
+<input type="text" #uname (keyup.enter)="showNow(uname.value)" />
+
+<p>Your Name : {{name}}</p>
+
+<h2>this is a basic practice : 2 with button</h2>
+
+<input type="text" #myemails  />
+
+<p>Your email : {{ email }}</p>
+
+<button (click)="newSubmit(myemails.value)" >submit to see the value</button>
+
+<h2>this is a basic practice : 3</h2>
+
+<input type="text" #password (keyup)=0 />
+
+<p>Your password : {{password.value}}</p>
+
+

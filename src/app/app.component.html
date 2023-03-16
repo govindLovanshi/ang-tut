@@ -1,0 +1,35 @@
+<h4>This is just for practice (simple example )</h4>
+
+<section [ngSwitch]="name" >
+    <p *ngSwitchCase="'samer'" >samer is kid</p>
+    <p *ngSwitchCase="'govind'" >govind is developer</p>
+    <p *ngSwitchCase="'rahul'" >rahul is good</p>
+    <p *ngSwichDefault >No Person Is Found</p>
+</section>
+
+<h4>This is real practice</h4>
+
+<section >
+    <nav>
+        <ul>
+            <li (click)="openTab()" [class.active]="currentTab===''" >Home</li>
+            <li [class.active]="currentTab==='about'" (click)="openTab('about')">About</li>
+            <li [class.active]="currentTab==='profil'" (click)="openTab('profil')">Profil</li>
+            <li [class.active]="currentTab==='logout'" (click)="openTab('logout')">Logout</li>
+        </ul>
+    </nav>
+</section>
+
+<section [ngSwitch]="currentTab" >
+    <div *ngSwitchCase="'about'" >About Page Content</div>
+    <div *ngSwitchCase="'profil'">
+        Profil Page
+        <br><br>
+        <form action="#">
+            name :  <input type="text"  /> <br><br>
+            email : <input type="text" /><br>
+        </form>
+    </div>
+    <div *ngSwitchCase="'logout'">Logout page content</div>
+    <div *ngSwichDefault> Home Page Content</div>
+</section>

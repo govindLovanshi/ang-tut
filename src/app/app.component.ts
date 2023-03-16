@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  name : string = "govind" 
+
+  currentTab = "";
+  openTab(tabName = ''){
+    this.currentTab = tabName;
+  }
+
 
 }

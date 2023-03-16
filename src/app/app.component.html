@@ -1,5 +1,14 @@
-<h1>{{title}}</h1>
-{{1 + 1}}
-<h5>{{show()}}</h5>
+<!-- attribute binding -->
 
-<img src="{{url}}"/>
+<table border="1">
+    <tr>
+        <td [attr.colspan]="2" >table</td>
+    </tr>
+    <tr>
+        <td>One</td>
+        <td>Two</td>
+
+    </tr>
+</table>
+
+<button [attr.aria-label]="btn " >pay</button>

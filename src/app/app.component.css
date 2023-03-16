@@ -1,0 +1,14 @@
+.primary{
+    color: blueviolet;
+}
+
+.Success{
+    color: green;
+}
+.Warning{
+    color: yellow;
+}
+
+.danger{
+    color: red;
+}

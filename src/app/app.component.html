@@ -1,5 +1,23 @@
-<h1>{{title}}</h1>
-{{1 + 1}}
-<h5>{{show()}}</h5>
+<input type="text" (keyup)="setText($event)" />
 
-<img src="{{url}}"/>
+<div>
+    <!-- intepolation  -->
+    <p>Font Size :  {{textSize}}px</p>
+    <!-- we can also use change  -->
+    <input (input)="setSizeByRange($event)" type="range"  min="3" max="25" value="5"/>
+   
+    <button (click)="setSize('inc')" >+</button>
+    <button (click)="setSize('dec')">-</button>
+</div>
+<hr/>
+
+<h3>You can adust you Size by + and  -</h3>
+<!-- event binding  -->
+<select (chnage)="setColorChange($event)" >
+    <option value="primary">primary</option>
+    <option value="Success">Success</option>
+    <option value="Warning">Warning</option>
+    <option value="danger">danger</option>
+</select>
+<!-- style binding and class binding  -->
+<p [style.fontSize.rem]="textSize" [class]="textClass" >{{text}}</p>

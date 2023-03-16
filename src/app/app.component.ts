@@ -6,11 +6,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ang-tut';
-  url =  "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-  sal = 12000
-  show(){
-    return this.title + '-' + this.sal
+
+  text = '';
+  textSize = 3 ;
+  textSizeInPx :any ;
+  textClass = ' ';
+
+  setText(event : any){
+    const val = event.target.value;
+    this.text = val;
+}
+
+setSize(operation :any){
+  if(operation == 'inc'){
+    this.textSize += 1;
   }
+  else{
+    this.textSize -= 1;
+  }
+
+  this.textSizeInPx = this.textSize + 'px'
+
+}
+
+setColorChange(event : any){
+  let colormy = event.target.value;
+  console.log(colormy)
+  this.textClass = colormy
+}
+
+setSizeByRange(event : any){
+  let val = event.target.value;
+  this.textSize = val;
+}
 
 }

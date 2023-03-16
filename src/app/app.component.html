@@ -1,0 +1,52 @@
+<div>
+    <p>Lower case :</p>
+    <p>Name : {{ name | lowercase}}</p>
+</div>
+<div>
+    <p>Upper case :</p>
+    <p>Name : {{ name | uppercase}}</p>
+</div>
+<div>
+    <p>Captial case :</p>
+    <p>Name : {{ name | titlecase}}</p>
+</div>
+<div>
+    <p>Date without pipe :</p>
+    <p>date : {{ today }}</p>
+    <p>Date with pipe :</p>
+    <p>date : {{ today | date }}</p>
+    <p>parameter date : </p>
+    <p>date : {{ today | date : 'shortDate'}}</p>
+    <p>parameter date : </p>
+    <p>date : {{ today | date : 'mediumDate'}}</p>
+</div>
+<div>
+    <p>Decimal Pipe</p>
+    <p>Decimal :- {{num | number : '1.0-0'}}</p>
+</div>
+<div>
+    <p>percentage Pipe</p>
+    <p>percentage :- {{percentage | percent : '2.1-2'}}</p>
+</div>
+<div>
+    <p>Currency Pipe</p>
+    <p>Currency Pipe :- {{myCurrency | currency : 'INR':'symbol'}}</p>
+</div>
+<div>
+    <p>key value Pipe</p>
+    <p *ngFor="let data of persons | keyvalue">
+        {{ data.key }} | {{ data.value }}
+    </p>
+</div>
+<div>
+    <p>slice pipe</p>
+    <p >
+       {{mySclice | slice : 0 : 4}}
+    </p>
+</div>
+<div>
+    <p>json pipe</p>
+    <p >
+       {{persons | json}}
+    </p>
+</div>

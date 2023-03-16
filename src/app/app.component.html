@@ -1,5 +1,28 @@
-<h1>{{title}}</h1>
-{{1 + 1}}
-<h5>{{show()}}</h5>
+<!-- event binding  -->
+<button (click)="handleClick()" >Click ME</button>
+<br>
+<br>
 
-<img src="{{url}}"/>
+
+
+<!-- name=bob ====> nte that bob is in single quotes and we are assigning string to the name variable  -->
+<button (click)="name='bob'" >event click</button>
+<span>{{name}}</span>
+
+<br>
+<br>
+
+<h4>Keyup</h4>
+<input (keyup.enter)="handleInput($event)" />
+<p>{{uname}}</p>
+
+<br>
+<br>
+
+<h4>Select the option ==> Event Binding</h4>
+<select (change)="handleSlect($event)">
+    <option value="govind">govind</option>
+    <option  value="shiavm">shiavm</option>
+    <option  value="harsih">harsih</option>
+</select>
+

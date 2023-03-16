@@ -1,5 +1,12 @@
-<h1>{{title}}</h1>
-{{1 + 1}}
-<h5>{{show()}}</h5>
+<!-- class binding  -->
 
-<img src="{{url}}"/>
+<div class="box" [class.border]="myCond" >class binding</div>
+
+<!-- style binding  -->
+
+<h1 [style.color]="'red'"  >hello world</h1>
+<h1 [style.color]=" isOk ? 'green' : 'yello' "  >Is ok</h1>
+
+
+<!-- background color in style binding  -->
+<h1 [style.backgroundColor]="'blue'"  >Style Binding</h1>

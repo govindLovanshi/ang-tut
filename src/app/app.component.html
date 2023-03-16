@@ -1,0 +1,23 @@
+ <!-- ng-if  -->
+ 
+ <select (change)="handleEvent($event)" >
+    <option value="c" >c</option>    
+    <option value="pyhton" >python</option>    
+    <option value="java" >java</option>    
+    <option value="css" >css</option>    
+</select>
+
+<div>
+    <p *ngIf="selectedSkills" >Selected Skills set is  : {{ selectedSkills }}</p>
+</div>
+
+<!-- 2nd example  -->
+
+<div>
+    loading.....
+</div>
+
+<section *ngif="!isDataArrived">
+    your Data {{data}}
+</section>
+

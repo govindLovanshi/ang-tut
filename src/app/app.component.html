@@ -1,3 +1,6 @@
-<input type="text"  (keyup.enter)="passsValue($event)" />
+<h1>Parent Components</h1>
  
-<app-child [name]="data" ></app-child>
+<input type="text" (keyup)="passingValue($event)" />
+
+<app-child [name]="data" ></app-child> 
+// here i have bind with the parent component to Child

@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data: any;
-  passsValue(event: any){
-    const val = event.target.value; 
-    this.data = val;
+ 
+  data : string = '';
+   
+  passingValue(event : any){
+    let newVAlue = event.target.value
+    this.data = newVAlue ;
   }
+
 }

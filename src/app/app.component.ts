@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  foods : any[] = [];
 
+  importingDataFromChild(evt : any){
+    console.log(evt)
+    this.foods.push(evt);
+  }
 }

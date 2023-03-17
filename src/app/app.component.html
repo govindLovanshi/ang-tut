@@ -1,0 +1,11 @@
+<h1>Fav Food Product - Sending Data from Child to Parent with (Event Binding)</h1>
+
+<p>Show the Fav Food list ==> that are shared by Child </p>
+<ul>
+    <li *ngFor="let food of foods" >
+        {{  food }}
+    </li>
+</ul>
+
+
+<app-child (favFood)="importingDataFromChild($event)" ></app-child>

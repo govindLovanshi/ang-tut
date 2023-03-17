@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  data : string[] = [];
 
+  passingValue(event :  any){
+    console.log("====>",event )
+    let val = event.target.value
+    this.data.push(val);
+  }
 }

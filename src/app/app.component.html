@@ -1,0 +1,10 @@
+<h3>Enter Food Name  </h3>
+
+<input type="text" #foodItem 
+(keyup.enter)="dataIsHere(foodItem.value)" />
+
+<app-child [foodsChild]="foods" (deleteEvent)="removeFood($event)" ></app-child>
+
+<hr>
+<p>You removed : {{ deletedFood }} </p>
+

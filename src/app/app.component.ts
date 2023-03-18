@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  isloggedIn : boolean = false; 
 
+  names = ['govind', 'shubam' , 'shailendra']
+  name = 'c';
 }

@@ -1,0 +1,33 @@
+<h1>If - Else Practice </h1>
+<ng-template [ngIf]="isloggedIn" [ngIfElse]="elseBlock" >
+     I am logged In
+</ng-template>
+
+<ng-template #elseBlock >
+    <p>else : Hello world</p>
+</ng-template>
+
+<h1>If -Then - Else Practice </h1>
+
+<div *ngIf="isloggedIn ; then helloworld ; else elseBlock"  >
+
+</div>
+
+<ng-template #helloworld>
+    <p>it will show when it is tue and there is then </p>
+</ng-template>
+
+<h1>Using ngTemplate with ngFor :- </h1>
+
+<div *ngFor="let name of names ; let num = index" >
+    S.No : {{num }} | {{ name }}
+</div>
+
+<h1>Using ngTemplate with ngSwitchCase :- </h1>
+
+<div [ngSwitch]="name" >
+    <h1 *ngSwitchCase="'a'">Govind</h1>
+    <h1 *ngSwitchCase="'b'">Amit</h1>
+    <h1 *ngSwitchCase="'c'">Sammer</h1>
+   
+</div>

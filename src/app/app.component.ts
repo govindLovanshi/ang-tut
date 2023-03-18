@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+    data : number = 0;
 
+    addToQty(value: number){
+    this.data = value;
+  }
+
+  showData(value: number){
+    this.data = value // this value is coming from child components
+  }
 }

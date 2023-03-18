@@ -1,0 +1,11 @@
+<h1>Enter Product Qty</h1>
+<input type="text" #inp [value]="data" />
+<button (click)="addToQty(+ inp.value)"   >Add Qty</button>
+
+
+<p><strong>Total Qty : </strong>{{ data }}</p>
+<hr>
+
+<app-child [Item]="data" (itemChanged)="showData($event)" ></app-child>
+
+

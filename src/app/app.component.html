@@ -1,0 +1,29 @@
+<div class="main-head">
+    <h1>Purcahsed Store</h1>
+    <section>
+        <div *ngFor="let item of cartBucket" >
+            <p>Name : {{item.name}} ,  Qty : {{item.qty}} , Price : {{item.qty * item.price}}</p>
+
+        </div>
+    </section>
+    <div>
+        <button>Pay Now Rs {{calPrice()}}</button>
+    </div>
+</div>
+<hr>
+
+<app-product 
+*ngFor="let item of data"
+[pdata]="item"
+(updateCartEnv)="update($event)"
+>
+
+</app-product>
+
+
+
+
+
+
+
+

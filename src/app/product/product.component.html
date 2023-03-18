@@ -1,0 +1,13 @@
+<div>
+    <p><strong>Product Name : </strong> :{{productData.name}}</p>
+    <p><strong> Qunatity : </strong> :{{productData.qty}}</p>
+    <p><strong>Total Price : </strong> :{{productData.qty * productData.price}}</p>
+    <br>
+    <button (click)="updateCart($event)"  >{{isAddedToCart ?  'Remove to ' :'Add to'  }} cart</button>
+    <br>
+    <br>
+    <button (click)="IncQty()" >Increace Quantity</button>
+    <button (click)="DecQty()">Decrease Quantity</button>
+  
+    <hr>
+</div>

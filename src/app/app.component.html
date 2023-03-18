@@ -1,0 +1,9 @@
+<div>
+    <p>I am main hero of the angular</p>
+</div>
+
+<ng-container *ngFor="let client of clients">
+    <p *ngIf="client.paid" >
+        {{client.name}} | {{client.money}}
+    </p>
+</ng-container>

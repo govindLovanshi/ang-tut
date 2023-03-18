@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  clients = [
+    {name  : 'John', paid : true ,money : 2345} ,
+    {name  : 'hari', paid : true ,money : 123} ,
+    {name  : 'sam', paid : true ,money : 657} ,
+    {name  : 'ram', paid : false ,money : 57} ,
+  ]
 
 }

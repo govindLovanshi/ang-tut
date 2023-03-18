@@ -1,0 +1,37 @@
+<ng-template #brand let-data let-n="name">
+    <section class="brand">
+        <img src="https://thumbs.dreamstime.com/z/eagle-logo-design-inspiration-vector-icon-template-wing-148064393.jpg" alt="logo" >
+        <h3>{{n}}</h3>
+    </section>
+</ng-template>
+<header>
+    <ng-container *ngTemplateOutlet="brand context : {name : 'govind lovanshi'}" ></ng-container>
+    <section>
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>Home</li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+    
+    </section>
+</header>
+<hr>
+
+<section class="brand">
+    <ng-container *ngTemplateOutlet="brand context : {name : 'Sign up'}"  ></ng-container>
+
+    <input type="text" placeholder="name"/>
+    <input type="text" placeholder="email"/>
+    <input type="text" placeholder="passowrd"/>
+
+</section>
+
+<hr>
+<footer class="brand">
+    <ng-container *ngTemplateOutlet="brand context : {name : 'A real Brand'}" ></ng-container>
+
+    
+<p>Brand Name here &#169; 2023</p>
+</footer>

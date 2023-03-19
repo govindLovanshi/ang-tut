@@ -1,0 +1,21 @@
+<p>input works!</p>
+
+<!-- single slot projection  -->
+
+<!-- <div class="form-control {{bg}}"  >
+    <label for="">{{label}}</label>
+    <ng-content></ng-content>
+    <small>{{hint}}</small>
+</div> -->
+
+<!-- multi slot projection -->
+
+<div class="form-control {{bg}}"  >
+    <ng-content select="label" ></ng-content>
+
+    <div class="input">
+        <ng-content></ng-content>
+    </div>
+    <ng-content select="placeholder" ></ng-content>
+
+</div>

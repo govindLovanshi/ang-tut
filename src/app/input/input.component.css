@@ -1,0 +1,28 @@
+.form-control{
+    padding: 10px;
+    margin: 6px;
+    width: 200px;
+    font-family: monospace;
+    /* color: white; */
+}
+.form-control * {
+    display: block;
+
+}
+.form-control input{
+    margin: 4px 0px;
+}
+
+.primary{
+    background: rgb(22, 108, 206);
+}
+
+.accent{
+    background: rgb(216, 13, 47);
+
+}
+
+.warn{
+    background: rgb(199, 31, 135);
+
+}

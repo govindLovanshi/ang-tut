@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  chnagedHandler(event : any){
+    console.warn("data===>" , event.target.value);
+    
+  }
 
 }

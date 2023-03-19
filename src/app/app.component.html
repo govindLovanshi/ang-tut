@@ -1,0 +1,22 @@
+<h1>I am Parent</h1> 
+<hr>
+
+<!-- single slot projection  -->
+
+<!-- <app-input bg="warn" label="Email Adress" hint="Email address"  >
+    <input type="text" placeholder="Comapny Email" (keyup.enter)="chnagedHandler($event)" />
+</app-input>
+
+<app-input bg="accent" label="Name" hint="name"  >
+    <input type="text" placeholder="Name" (keyup.enter)="chnagedHandler($event)" />
+</app-input> -->
+
+
+<!-- multi slot projection  -->
+
+<app-input bg="warn" label="Email Adress" hint="Email address"  >
+    <label for="">Email id</label>
+    <input type="text" placeholder="Comapny Email" (keyup.enter)="chnagedHandler($event)" />
+    <small>email adress</small>
+
+</app-input>

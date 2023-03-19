@@ -1,0 +1,8 @@
+<select (change)="uid =sid.value" #id >
+    <option selected disabled >No value Select</option>
+    <option [value]="id" *ngFor="let id of [1,2,3,4,5]" >{{id}}</option>
+
+</select>
+
+<hr>
+<app-user [userId]="uid" ></app-user>

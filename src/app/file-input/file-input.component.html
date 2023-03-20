@@ -1,0 +1,9 @@
+
+<article class="upload-container" >
+    <section class="input-container" (click)="openFileDialog()" >
+        <ng-content></ng-content>
+        <img *ngIf="previewSrc" [src]="previewSrc" />
+    </section>
+
+    <h3 *ngIf="file" >Image Name : {{file.name}}  </h3>
+</article>

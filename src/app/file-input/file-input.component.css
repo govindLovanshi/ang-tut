@@ -1,0 +1,16 @@
+.upload-container{
+    margin: 5px;
+}
+
+.input-container{
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+}

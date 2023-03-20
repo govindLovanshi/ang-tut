@@ -1,0 +1,7 @@
+<section class="photo-container">
+    <div *ngIf="selectedPhoto" >
+        <h1>{{selectedPhoto.name}}</h1>
+        <img [src]="selectedPhoto.src" >
+        <p>{{selectedPhoto.description}}</p>
+    </div>
+</section>

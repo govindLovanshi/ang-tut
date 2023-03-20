@@ -1,0 +1,21 @@
+<h1>Marvel Studies</h1>
+
+<ng-content></ng-content>
+
+<div *ngIf="releasedMovie" >
+
+    <h3>Comments</h3>
+
+    <ul>
+        <li *ngFor="let comment of movieComponent" >
+            Email {{comment.email}}
+            <hr>
+            Comment {{comment.body}} 
+
+        </li>
+    </ul>
+
+</div>
+
+
+

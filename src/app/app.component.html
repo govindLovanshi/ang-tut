@@ -1,0 +1,8 @@
+<div>
+    Name : <input type="text" (keyup.enter)="0;" #name />
+    <br>
+    DOB : <input type="text" (keyup.enter)="0;" #dob />
+
+</div>
+
+<app-user [name]="name.value" [dob]="dob.value" ></app-user>

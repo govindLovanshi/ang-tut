@@ -1,0 +1,18 @@
+.photo{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+img{
+    width: 200px;
+    height : 200px
+}
+
+.selected {
+    box-shadow: 10px 10px 5px 0px rgba(220 ,220 ,220 ,0.75);
+}
